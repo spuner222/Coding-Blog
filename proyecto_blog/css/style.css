@@ -1,0 +1,488 @@
+:root {
+    --tiutloprincipal:'Press Start 2P', cursive;
+    --fuentesubtitulo: 'Staatliches', sans-serif;
+    --colorPrincipal: #16458A;
+    --colorSecundario: #FFC300;
+    --blanco: #FFF;
+    --negro: #000;
+    --gris:	#808080;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    zoom: 85%;
+}
+
+p {
+  color: #000;
+  font-weight: 400;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+   h2, h3, h4 {
+    text-align: center;
+    color: var(--colorSecundario);
+    font-family: var(--fuentesubtitulo);
+  }
+
+  h1 {
+    font-size: 4.8rem;
+    font-family: var(--fuentesubtitulo);
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3.2rem;
+  }
+
+  h4 {
+    font-size: 2.8rem;
+  }
+  
+  .contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  
+
+  .no-margin {
+    margin: 0;
+  }
+
+  .no-padding {
+    padding: 0;
+  }
+
+
+  .centrar-texto {
+    text-align: center;
+  }
+
+  .header {
+    background-image: url(../img/banner.webp); 
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+
+  .header_texto {
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+
+  .titulo-header {
+    font-size: 2rem;
+    line-height: 4rem;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo {
+    color: #20FFEB;
+    }
+
+    .logo__nombre {
+      margin: 0;
+      text-align: center;
+      font-size: 5rem;
+    }
+
+    .navegacion__enlace {
+      font-family: var(--fuentesubtitulo);
+      color: #20FFEB;
+      font-size: 2.8rem;
+      display: block;
+      text-align: center;
+    }
+
+  @media (min-width: 768px)  {
+        .barra{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+        }
+      
+        .logo__nombre {
+          font-weight: normal;
+          margin: 0;
+          font-size: 7rem;
+        }
+      
+        .logo__negritas {
+          font-weight: 700;
+      
+        }
+
+        .navegacion__enlace {
+          font-size: 2.8rem;
+        }
+        
+        .navegacion {
+          display: flex;
+          gap: 2rem;
+        }
+
+        .barra {
+          padding-bottom: 5rem;
+        }
+
+        .barra {
+          padding-bottom: 10rem;
+        }
+
+        .titulo-header {
+          font-size: 4rem;
+          padding-top: 0;
+        }
+
+        .header_texto {
+          backdrop-filter: none;
+        }
+
+        
+  }
+
+    .titulo-contenido{
+      text-align: center;
+      color: var(--negro);
+      font-family: var(--fuentesubtitulo);
+      margin: 2.5rem;
+      padding-top: 4rem;
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+    }
+
+    .titulo-article{
+      text-align: left;
+      color: var(--negro);
+      font-family: var(--fuentesubtitulo);
+      margin: 0;
+    }
+
+    .boton {
+      display: block;
+      font-family: var(--fuenteHeading);
+      color: var(--blanco);
+      text-align: center;
+      padding: 1rem 3rem;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      border: none;
+    }
+
+    .contenido-principal {
+      padding-bottom: 10rem;
+    }
+    
+@media (min-width: 768px)  {
+      .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 6rem;
+      }
+
+      .boton {
+        display: inline-block;
+      }
+
+      .titulo-contenido{
+      text-align: left;
+    }
+}
+
+
+.boton-secundario {
+  background-color: var(--colorPrincipal);
+  border-radius: 1rem;
+}
+.boton-primario {
+  background-color: var(--negro);
+}
+
+.cursos{
+  list-style: none;
+}
+
+.curso {
+  padding-top: 3rem;
+  border-bottom: 1px solid var(--gris);
+}
+
+.info-curso{
+  font-family: var(--fuentesubtitulo);
+  font-weight: bold;
+}
+.curso-especificaciones {
+  font-weight: normal;
+}
+
+.info-curso, .curso-especificaciones {
+  font-size: 2rem;
+}
+
+.footer {
+  background-color: #16458A;
+  padding: 2rem;
+  
+}
+
+.titulo-footer{
+      text-align: center;
+      color: var(--negro);
+      font-family: var(--fuentesubtitulo);
+      margin: 0;
+
+}
+
+.contenido-blog {
+  padding: 3rem;
+  justify-content: center;
+}
+
+.titulo-blog {
+  text-align: center;
+      color: var(--negro);
+      font-family: var(--fuentesubtitulo);
+      margin: 0;
+}
+
+.imagen-blog{
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  margin: 0 auto;
+  display: block;
+}
+
+
+.imagen-lenguajes{
+  width: 20rem;
+}
+
+@media (min-width: 768px)  {
+  .ejemplos {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: .5rem;
+    padding-bottom: 4rem;
+    justify-content: center;
+  }
+}
+
+.lista {
+  list-style: none;
+}
+
+.contenido-nosotros {
+  padding: 3rem;
+  margin-bottom: 10rem;
+}
+@media (min-width: 768px)  {
+  .contenido-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 3rem;
+    margin-bottom: 10rem;
+  }
+}
+
+.header-contacto {
+    height: 8rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.navegacion__enlace-contacto {
+    font-family: var(--fuentesubtitulo);
+    color: var(--negro);
+    font-size: 2rem; 
+    display: block;
+    text-align: center;
+}
+
+.logo__nombre-contacto {
+  font-size: 3rem;
+}
+
+.logo-contacto{
+   color: #000;
+}
+.titulo-contactanos {
+  font-size: 6rem;
+  padding-top: 7rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+@media (min-width: 768px)  {
+  .titulo-contactanos {
+    font-size: 18rem;
+    text-align: center;
+    line-height: 3rem;
+    padding-bottom: 10rem;
+  }
+
+}
+
+.formulario-contacto {
+  padding-bottom: 10rem;
+}
+.contacto{
+  background-color: #808080;
+}
+
+  .campo {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  }
+
+  .inpunt {
+    flex: 1;
+    margin-bottom: 3rem;
+    height: 5rem;
+    border-radius: 1rem;
+    border: 3px solid;
+    border-color: #16458A;
+  }
+
+  .inpunt-mensaje {
+    flex: 1;
+    margin-bottom: 3rem;
+    height: 10rem;
+    border-radius: 1rem;
+    border: 3px solid;
+    border-color: #16458A;
+  }
+
+@media (min-width: 768px)  {
+  .inpunt {
+    flex: .5;
+    margin-bottom: 3rem;
+    height: 5rem;
+    border-radius: 1rem;
+    border: 3px solid;
+    border-color: #16458A;
+  }
+  
+  .campo {
+  display: flex;
+  align-items: center;
+  padding-left: 40rem;
+}
+
+.inpunt-mensaje {
+  flex: .5;
+  margin-bottom: 3rem;
+  height: 10rem;
+  border-radius: 1rem;
+  border: 3px solid;
+  border-color: #16458A;
+}
+
+}
+
+.titulo-cursos{
+  text-align: center;
+      color: var(--negro);
+      font-family: var(--fuentesubtitulo);
+      margin: 2.5rem;
+      padding-top: 4rem;
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+}
+
+.info{
+  font-family: var(--fuentesubtitulo);
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: .5rem;
+}
+
+.titulo-curso {
+  font-size: 3rem;
+  color: #000;
+  text-align: left;
+  line-height: 3rem;
+}
+
+.imagen-curso {
+  padding-bottom: 3rem;
+}
+
+.informacion-curso {
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 768px)  {
+  .titulo-curso {
+    font-size: 3.8rem;
+    color: #000;
+    text-align: left;
+    line-height: 5rem;
+  }
+
+  .curso-especificaciones2{
+    font-weight: 300;
+  }
+
+  .info{
+    font-family: var(--fuentesubtitulo);
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+
+  .apartado-curso{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding-top: 10rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--gris);
+    justify-content: center;
+  }
+
+  .apartado-curso-last {
+    display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+      justify-content: center;
+
+    }
+}
+
+.curso-especificaciones2{
+  font-weight: 100;
+}
+
